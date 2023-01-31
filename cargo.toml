@@ -1,0 +1,5 @@
+[workspace]
+
+members = [
+    "E0521_borrowed_data_escapes_outside_of_function",
+]
