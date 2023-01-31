@@ -3,6 +3,21 @@
 version = 3
 
 [[package]]
+name = "E0507_cannot_move_out_of_which_is_behind_a_mutable_reference"
+version = "0.1.0"
+
+[[package]]
+name = "E0515_cannot_return_value_referencing_temporary_value"
+version = "0.1.0"
+
+[[package]]
+name = "E0521_borrowed_data_escapes_outside_of_function"
+version = "0.1.0"
+dependencies = [
+ "cursive",
+]
+
+[[package]]
 name = "ahash"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -218,13 +233,6 @@ name = "itoa"
 version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fad582f4b9e86b6caa621cabeb0963332d92eea04729ab12892c2533951e6440"
-
-[[package]]
-name = "james_vs_borrow_checker"
-version = "0.1.0"
-dependencies = [
- "cursive",
-]
 
 [[package]]
 name = "lazy_static"

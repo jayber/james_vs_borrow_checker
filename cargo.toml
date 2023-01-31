@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "E0521_borrowed_data_escapes_outside_of_function",
+    "E0515_cannot_return_value_referencing_temporary_value",
+    "E0507_cannot_move_out_of_which_is_behind_a_mutable_reference",
+]

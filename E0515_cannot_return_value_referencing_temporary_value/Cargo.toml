@@ -1,9 +1,8 @@
 [package]
-name = "james_vs_borrow_checker"
+name = "E0515_cannot_return_value_referencing_temporary_value"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cursive = { version = "0.20", default-features = false, features = ["crossterm-backend"] }
