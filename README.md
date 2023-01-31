@@ -12,7 +12,8 @@ clear how this applies to your situation, or it tells you what is wrong but not 
 actually change your code to get it to work.
 
 This is a workspace, containing a crate for each error. There is a minimal example for each in the 
-main.rs file in the crate root, with the solutions, where I have any, in the /bin directory.
+main.rs file in the crate /src root, with the solutions, where I have any, in the /src/bin 
+directory.
 
 If you have better solutions, please submit PRs to the /bin directory for that specific error.
 
