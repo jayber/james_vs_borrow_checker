@@ -40,4 +40,5 @@ So I would have to build the display only once and just switch the displayed vie
 the event
 
 src/bin/solution_move.rs is a "solution" that accomplishes this functionality, but it does mean 
-that the whole view tree is build at once, rather than building a view when it is required. 
+that the whole view tree is built at once, rather than building a view when it is required. And 
+everything gets moved all over the place, rather than referenced, so not Rusty at all.
