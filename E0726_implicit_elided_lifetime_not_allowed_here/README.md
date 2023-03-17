@@ -29,3 +29,5 @@ the static lifetime`
 Using `impl View for MyView<'static>` gets this part to compile but that doesn't work as now my 
 ref must live for static (see the version of `main.rs` that has the commit comment `tried using 
 <'static>`
+
+Can I not implement a train in a class that holds a reference?

@@ -20,14 +20,13 @@ struct MyView<'a> {
     inner_view: TextView
 }
 
-impl MyView<'_> {
+impl MyView {
     fn new(thing: &MyElse) -> MyView {
         MyView { something_else: &thing, inner_view: TextView::new(thing.data.clone()) }
     }
 }
 
-impl View for MyView<'static> {
-
+impl View for MyView {
     fn draw(&self, printer: &Printer) { self.inner_view.draw(printer); }
     fn layout(&mut self, size: Vec2) { self.inner_view.layout(size); }
     fn required_size(&mut self, constraint: Vec2) -> Vec2 { self.inner_view.required_size(constraint) }
