@@ -18,6 +18,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "E0726_implicit_elided_lifetime_not_allowed_here"
+version = "0.1.0"
+dependencies = [
+ "cursive",
+]
+
+[[package]]
 name = "ahash"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -1,12 +1,9 @@
 [package]
-name = "E0521_borrowed_data_escapes_outside_of_function"
+name = "E0726_implicit_elided_lifetime_not_allowed_here"
 version = "0.1.0"
 edition = "2021"
-default-run = "main"
 
-[[bin]]
-name = "main"
-path = "src/main.rs"
 
 [dependencies]
 cursive = { version = "0.20", default-features = false, features = ["crossterm-backend"] }
+

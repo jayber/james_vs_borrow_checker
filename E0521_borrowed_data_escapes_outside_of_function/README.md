@@ -39,6 +39,8 @@ type is `Fn`.
 So I would have to build the display only once and just switch the displayed view/layer/screen on 
 the event
 
-src/bin/solution_move.rs is a "solution" that accomplishes this functionality, but it does mean 
+[src/bin/solution_move.rs]() is a "solution" that accomplishes this functionality, but it does mean 
 that the whole view tree is built at once, rather than building a view when it is required. And 
-everything gets moved all over the place, rather than referenced, so not Rusty at all.
+everything gets moved all over the place, rather than referenced, so not Rusty at all. Yeuch!
+
+Cursive has a user_data member which I hope can be used to accomplish this without unnecessary moves
