@@ -1,9 +1,11 @@
-use cursive::{Printer, Vec2};
-use cursive::View;
 use cursive::views::TextView;
+use cursive::View;
+use cursive::{Printer, Vec2};
 
 fn main() {
-    let thing = MyElse { data: "".to_string() };
+    let thing = MyElse {
+        data: "".to_string(),
+    };
     let a_view = MyView::new(&thing);
 
     let mut siv = cursive::default();
@@ -17,17 +19,26 @@ struct MyElse {
 
 struct MyView<'a> {
     something_else: &'a MyElse,
-    inner_view: TextView
+    inner_view: TextView,
 }
 
 impl MyView {
     fn new(thing: &MyElse) -> MyView {
-        MyView { something_else: &thing, inner_view: TextView::new(thing.data.clone()) }
+        MyView {
+            something_else: &thing,
+            inner_view: TextView::new(thing.data.clone()),
+        }
     }
 }
 
 impl View for MyView {
-    fn draw(&self, printer: &Printer) { self.inner_view.draw(printer); }
-    fn layout(&mut self, size: Vec2) { self.inner_view.layout(size); }
-    fn required_size(&mut self, constraint: Vec2) -> Vec2 { self.inner_view.required_size(constraint) }
+    fn draw(&self, printer: &Printer) {
+        self.inner_view.draw(printer);
+    }
+    fn layout(&mut self, size: Vec2) {
+        self.inner_view.layout(size);
+    }
+    fn required_size(&mut self, constraint: Vec2) -> Vec2 {
+        self.inner_view.required_size(constraint)
+    }
 }
